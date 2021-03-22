@@ -53,6 +53,7 @@ class BaseStreamBlock(blocks.StreamBlock):
     )
     embed_block = EmbedBlock(
         help_text="insert embed",
+        label="Embed",
         template="base/blocks/embed_block.html"
     )
 

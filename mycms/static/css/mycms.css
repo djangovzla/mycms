@@ -1,0 +1,24 @@
+.bd-callout {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border-width: 1px 1px 1px 0.25rem;
+  border-style: solid;
+  border-color: rgb(233, 236, 239);
+  border-image: initial;
+  border-radius: 0.25rem;
+}
+
+.bd-callout-dark {
+  border-left-color: #212529;
+}
+
+.embed iframe,
+.embed object,
+.embed embed {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 400px;
+}

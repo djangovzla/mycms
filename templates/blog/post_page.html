@@ -3,10 +3,16 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-  <h1 class="mt-3 mb-5 text-center text-primary">{{ page.title }}</h1>
   <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Blog</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+      </ol>
+    </nav>
+    <h1 class="mt-3 mb-5 text-center text-dark">{{ page.title }}</h1>
     {{ page.body }}
 
-    <p><a href="{{ page.get_parent.url }}">Return to blog<a></p>
+    <p class="mt-5"><a href="{{ page.get_parent.url }}" class="text-decoration-none">Volver al blog<a></p>
   </div>
 {% endblock content %}

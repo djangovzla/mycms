@@ -1,6 +1,6 @@
 {% load wagtailimages_tags %}
 
-<figure class="text-center">
+<figure class="text-center mt-3 mb-3">
   {% image self.image fill-600x400 %}
-  <figcaption>{{ self.caption }}</figcaption>
+  <figcaption class="figure-caption">{{ self.caption }}</figcaption>
 </figure>
